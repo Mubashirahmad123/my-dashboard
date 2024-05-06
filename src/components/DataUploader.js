@@ -205,6 +205,32 @@ function DataUploader() {
       {graphData && graphType === "heatmap" && (
         <Plot data={graphData.data} layout={graphData.layout} />
       )}
+
+     {graphData && graphType === "violin" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
+       {graphData && graphType === "histogram" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
+       {graphData && graphType === "densitymapbox" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
+
+      {graphData && graphType === "strip" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
+      {graphData && graphType === "density_contour" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
+       {graphData && graphType === "scatter3D" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
+      {graphData && graphType === "edfc" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
+      {graphData && graphType === "pie" && (
+        <Plot data={graphData.data} layout={graphData.layout} />
+      )}
     </div>
     </div>
 
@@ -212,3 +238,4 @@ function DataUploader() {
 }
 
 export default DataUploader;
+
